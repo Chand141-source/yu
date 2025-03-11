@@ -1,0 +1,24 @@
+public class Animal{
+public void sound(int x,int y){
+System.out.println(x+y);
+}
+}
+class Cat extends Animal{
+public void sound(int x,int y){
+System.out.println("hi");
+}
+}
+class Rat extends Animal{
+public void sound(int x,int y){
+System.out.println("hello");
+}
+}
+public class Sai{
+public static void main(String[]args){
+Animal myanimal=new Animal();
+Animal mycat=new Cat();
+Animal myrat=new Rat();
+myanimal.sound(10,20);
+mycat.sound(10,20);
+myrat.sound(10,20);
+
